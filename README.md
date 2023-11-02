@@ -18,7 +18,7 @@ Nuestro programa falla en algunas partes y queremos añadir una funcionalidad nu
 
 Corrige los siguientes errores detectados. Cada uno suele resolverse modificando una única línea de código. No tienes por qué resolverlos en orden
 
-1. la aplicación tan solo recupera 10 pokemons de la [PokeAPI](https://pokeapi.co/). Nos gustaría recuperar los pokemons de la primera generación (sí, tendrás que buscar cuantos pokemons hay en la primera genración)
+1. la aplicación tan solo recupera 10 pokemons de la [PokeAPI](https://pokeapi.co/). Nos gustaría recuperar los pokemons de la primera generación (sí, tendrás que buscar cuantos pokemons hay en la primera generación)
 2. A pesar de que pongamos bien el nombre del pokemon, si lo ponemos en mayúsculas, no nos cuenta como acierto. Encuentra la línea que provoca esto y corrígela
 3. Nos han pedido que añadamos un botón que ponga "Check". Al hacer click en el, debe hacer lo mismo que el hecho de pulsar el enter
 
@@ -35,6 +35,9 @@ Para averiguarlo
 2. Fíjate si se produce algún error al recargar la página
 
 ¿Qué está sucediendo?
+
+No se produce ningún error.
+Math.floor(Math.random() * (max - min + 1) + min); -->  se suma 1 al tamaño del rango (max - min) para garantizar que el valor máximo (max) también esté incluido como un posible resultado. Esto significa que el rango será [min, max].
 
 ## Motivación
 
